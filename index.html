@@ -70,21 +70,23 @@
     </style>
   </head>
   <style>
-      #body{
-          background-color: white;
-      }
-     #inputField{ height: 48px;
+     
+     #inputField{ height: 40px;
     border: 1px solid #666666;
     border-radius: 10px;
+    width: 200px;
     }
     #inputLabel{
-        margin-bottom: -9px;
-    margin-left: 10px;
+        margin-bottom: -7px;
+    margin-left: 15px;
     background-color: white;
-    width: 103px;
+    width: fit-content;
+    }
+    .md-content.md-default-theme, md-content{
+        background-color: white;
     }
   </style>
-  <body id="body">
+  <body >
     <!-- Header div -->
     <div class="header">
       <!-- first logo div -->
@@ -106,7 +108,7 @@
         <div ng-controller="DemoCtrl" layout="column" ng-cloak class="md-inline-form">
 
           
-            <md-content layout-padding>
+            <md-content >
               <div>
                 <form name="userForm">
           
@@ -116,10 +118,6 @@
                       <input ng-model="user.firstName" id="inputField">
                     </md-input-container>
           
-                    <md-input-container class="md-block" flex-gt-sm>
-                      <label>Long Last Name That Will Be Truncated And 3 Dots (Ellipsis) Will Appear At The End</label>
-                      <input ng-model="theMax">
-                    </md-input-container>
                   </div>
           
                   <md-input-container class="md-block">
