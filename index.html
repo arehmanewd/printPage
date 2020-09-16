@@ -108,7 +108,7 @@
     }
     #inputLabel {
       margin-bottom: -7px;
-      margin-left: 8%;
+      margin-left: 5%;
       background-color: white;
       width: fit-content;
     }
@@ -130,6 +130,10 @@
     .formHeadingText {
       color: #2663a5;
       margin-top: 5px;
+    }
+    .fromRows{
+        display: flex;
+        margin-top: -46px;
     }
   </style>
   <body>
@@ -164,32 +168,64 @@
         <md-content>
           <div>
             <form name="userForm">
+                <!-- First Row -->
               <div style="display: flex;">
-                <md-input-container class="md-block" style="width: 17%;" >
+                <md-input-container class="md-block" style="width: 18%;" >
                   <label id="inputLabel" style="margin-left: 2%;">Curso Atual</label>
                   <input ng-model="user.firstName" id="inputField"  style="margin-left: 0;"/>
-                </md-input-container>
+                </md-input-container> &nbsp;&nbsp;
                 <md-input-container class="md-block" class="inputFields" style="width: 14%"  >
                   <label id="inputLabel">Serie/Ano Atual</label>
                   <input ng-model="user.firstName" id="inputField" />
-                </md-input-container>
-                <md-input-container class="md-block"  style="width: 10%;margin-left: 1%;" >
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block"  style="width: 12%;" >
                   <label id="inputLabel">Turma Atual</label>
                   <input ng-model="user.firstName" id="inputField" />
-                </md-input-container>
-                <md-input-container class="md-block" style="width: 14%;margin-left: 1%;"   >
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 16%;"   >
                   <label id="inputLabel" >Para o Ano Letivo</label>
                   <input ng-model="user.firstName" id="inputField" />
-                </md-input-container>
-                <md-input-container class="md-block" style="width: 10%;margin-left: 1%;" >
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 10%;" >
                   <label id="inputLabel">Turno</label>
                   <input ng-model="user.firstName" id="inputField" />
-                </md-input-container>
-                <md-input-container class="md-block" style="width: 14%;margin-left: 1%;"   >
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 15%;"   >
                   <label id="inputLabel">Serie/Ano</label>
                   <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 15%;"   >
+                  <label id="inputLabel">Curso</label>
+                  <input ng-model="user.firstName" id="inputField" />
                 </md-input-container>
-                <md-input-container class="md-block" style="width: 14%;margin-left: 1%;"   >
+              </div>
+              <!-- Second Row -->
+              <div class="fromRows">
+                <md-input-container class="md-block" style="width: 20%;" >
+                  <label id="inputLabel" style="margin-left: 2%;">Curso Atual</label>
+                  <input ng-model="user.firstName" id="inputField"  style="margin-left: 0;"/>
+                </md-input-container> &nbsp;&nbsp;
+                <md-input-container class="md-block" class="inputFields" style="width: 10%"  >
+                  <label id="inputLabel">Serie/Ano Atual</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block"  style="width: 12%;" >
+                  <label id="inputLabel">Turma Atual</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 16%;"   >
+                  <label id="inputLabel" >Para o Ano Letivo</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 20%;" >
+                  <label id="inputLabel">Turno</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 10%;"   >
+                  <label id="inputLabel">Serie/Ano</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 10%;"   >
                   <label id="inputLabel">Curso</label>
                   <input ng-model="user.firstName" id="inputField" />
                 </md-input-container>
