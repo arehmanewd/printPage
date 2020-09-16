@@ -67,6 +67,22 @@
       .heading-h3 {
       font-weight: normal;
       }
+      .filicao-heading{
+        background-color: lightgrey;
+        color: #666666;
+        height: 40px;
+        text-align: center;
+        padding-top: 0.5%;
+      }
+     .bold{
+       font-weight: bold;
+     }
+     #inputField2 {
+      height: 40px;
+      border: 1px solid #666666;
+      border-radius: 5px;
+      width: 500px;
+    }
     </style>
   </head>
   <style>
@@ -149,6 +165,59 @@
             </form>
           </div>
         </md-content>
+      </div>
+      <!-- Second Form started -->
+      <div>
+        <h6 class="filicao-heading">
+          FILIAÇÃO
+        </h6>
+        <form name="userForm" style="display: flex;">
+          <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel" class="bold">Mäe:</label>
+              <input ng-model="user.firstName" id="inputField2"  />
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel">First name</label>
+              <input ng-model="user.firstName" id="inputField" />
+            </md-input-container>
+            
+           
+           
+          </div>
+          <!-- ghgfhgnfgh -->
+
+
+
+          <!-- <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel" class="bold">Mäe:</label>
+              <input ng-model="user.firstName" id="inputField" />
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel">First name</label>
+              <input ng-model="user.firstName" id="inputField" />
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel">First name</label>
+              <input ng-model="user.firstName" id="inputField" />
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel">First name</label>
+              <input ng-model="user.firstName" id="inputField" />
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel">First name</label>
+              <input ng-model="user.firstName" id="inputField" />
+            </md-input-container>
+            <md-input-container class="md-block" flex-gt>
+              <label id="inputLabel">First name</label>
+              <input ng-model="user.firstName" id="inputField" />
+            </md-input-container>
+          </div> -->
+
+         
+        </form>
       </div>
     </div>
     <!-- Form ends -->
