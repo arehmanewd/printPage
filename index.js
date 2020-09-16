@@ -1,0 +1,1 @@
+var printPage = angular.module("printPage", ["ngRoute", "ngResource"]);
