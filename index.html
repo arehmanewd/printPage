@@ -52,9 +52,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Print Model</title>
     <style>
-      .logo {
-        /* / border: 1px solid red; / */
-      }
       .header {
         /* border: 1px solid green; */
         display: flex;
@@ -93,8 +90,6 @@
         margin-top: -35px;
       }
       .main-second-div {
-        /* border: 1px solid red; */
-
         width: 50%;
         height: 225px;
         padding-top: 20px;
@@ -105,6 +100,9 @@
       }
       #second-div-id {
         margin-left: 0.5%;
+      }
+      .head-div {
+        padding-bottom: 10px;
       }
     </style>
   </head>
@@ -121,13 +119,13 @@
     #inputLabel {
       margin-bottom: -7px;
       margin-left: 5%;
-      background-color: white;
+      background-color: #fafafa;
       width: fit-content;
     }
-    .md-content.md-default-theme,
+    /* .md-content.md-default-theme,
     md-content {
       background-color: white;
-    }
+    } */
     .mainForm {
       width: 98%;
       margin-left: 1%;
@@ -143,9 +141,9 @@
       color: #2663a5;
       margin-top: 5px;
     }
-    .fromRows{
-        display: flex;
-        margin-top: -46px;
+    .fromRows {
+      display: flex;
+      margin-top: -46px;
     }
   </style>
   <body>
@@ -196,13 +194,19 @@
                 </md-input-container>&nbsp;&nbsp;
                 <md-input-container class="md-block"  style="width: 12%;" >
                   <label class="bold" id="inputLabel">Turma Atual:</label>
-                  <input ng-model="user.firstName" id="inputField" />
-                </md-input-container>&nbsp;&nbsp;
-                <md-input-container class="md-block" style="width: 16%;"   >
-                  <label class="bold" id="inputLabel" >Para o Ano Letivo:</label>
-                  <input ng-model="user.firstName" id="inputField" />
-                </md-input-container>&nbsp;&nbsp;
-                <md-input-container class="md-block" style="width: 10%;" >
+                  <input
+                    ng-model="user.firstName"
+                    id="inputField"
+                  /> </md-input-container
+                >&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 16%">
+                  <label class="bold" id="inputLabel">Para o Ano Letivo:</label>
+                  <input
+                    ng-model="user.firstName"
+                    id="inputField"
+                  /> </md-input-container
+                >&nbsp;&nbsp;
+                <md-input-container class="md-block" style="width: 10%">
                   <label class="bold" id="inputLabel">Turno:</label>
                   <input ng-model="user.firstName" id="inputField" />
                 </md-input-container>&nbsp;&nbsp;
@@ -319,17 +323,14 @@
                
               </div>
 
-              <md-input-container class="md-block">
-                <label>Address</label>
-                <input ng-model="user.address" />
-              </md-input-container>
+            
             </form>
           </div>
         </md-content>
       </div>
 
       <!-- Second Form started -->
-      <div>
+      <div class="head-div">
         <h6 class="filicao-heading">FILIAÇÃO</h6>
         <form name="userForm">
           <div class="flex-div">
@@ -400,9 +401,7 @@
                 &nbsp;&nbsp;
               </div>
             </div>
-
             <!-- Second Flex Div -->
-
             <div class="main-second-div" id="second-div-id">
               <!-- first row -->
               <div class="flex-div" id="margin-top-1">
@@ -472,38 +471,158 @@
                 </md-input-container>
               </div>
             </div>
-
-            <!-- ghgfhgnfgh -->
-
-            <!-- <div layout-gt-sm="row">
-            <md-input-container class="md-block" flex-gt>
-              <label id="inputLabel" class="bold">Mäe:</label>
-              <input ng-model="user.firstName" id="inputField" />
-            </md-input-container>
-            <md-input-container class="md-block" flex-gt>
-              <label id="inputLabel">First name</label>
-              <input ng-model="user.firstName" id="inputField" />
-            </md-input-container>
-            <md-input-container class="md-block" flex-gt>
-              <label id="inputLabel">First name</label>
-              <input ng-model="user.firstName" id="inputField" />
-            </md-input-container>
-            <md-input-container class="md-block" flex-gt>
-              <label id="inputLabel">First name</label>
-              <input ng-model="user.firstName" id="inputField" />
-            </md-input-container>
-            <md-input-container class="md-block" flex-gt>
-              <label id="inputLabel">First name</label>
-              <input ng-model="user.firstName" id="inputField" />
-            </md-input-container>
-            <md-input-container class="md-block" flex-gt>
-              <label id="inputLabel">First name</label>
-              <input ng-model="user.firstName" id="inputField" />
-            </md-input-container>
-          </div> -->
           </div>
         </form>
       </div>
+      <!-- Second Form Ends -->
+
+      <!-- Third Form Started -->
+
+      <div class="head-div">
+        <h6 class="filicao-heading">RESPONSÁVIES</h6>
+        <form name="userForm">
+          <div class="flex-div">
+            <div class="main-second-div" id="border-div">
+              <!-- first row -->
+              <div class="flex-div" id="margin-top-1">
+                <md-input-container class="md-block" flex-gt style="width: 60%">
+                  <label id="inputLabel" class="bold">Pedagogico:</label>
+                  <input ng-model="user.firstName" id="inputField2" />
+                </md-input-container>
+                &nbsp; &nbsp;
+                <md-input-container class="md-block" flex-gt style="width: 40%">
+                  <label id="inputLabel" class="bold"
+                    >Data de Nascimento:</label
+                  >
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;
+              </div>
+              <!-- second row -->
+              <div class="flex-div" id="margin-top">
+                <md-input-container class="md-block" flex-gt style="width: 40%">
+                  <label id="inputLabel" class="bold">C.P.F:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;
+                <md-input-container class="md-block" flex-gt style="width: 20%">
+                  <label id="inputLabel" class="bold">R.G:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;
+                <md-input-container class="md-block" flex-gt style="width: 40%">
+                  <label id="inputLabel" class="bold">Tel.Residencial:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;
+              </div>
+              <!-- Third row -->
+              <div class="flex-div" id="margin-top">
+                <md-input-container class="md-block" flex-gt style="width: 50%">
+                  <label id="inputLabel" class="bold">Tel. Celular:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;<md-input-container
+                  class="md-block"
+                  flex-gt
+                  style="width: 50%"
+                >
+                  <label id="inputLabel" class="bold">Tel.Comercial:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;
+              </div>
+              <!-- Third row -->
+              <div class="flex-div" id="margin-top">
+                <md-input-container class="md-block" flex-gt style="width: 50%">
+                  <label id="inputLabel" class="bold">Profissao:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;<md-input-container
+                  class="md-block"
+                  flex-gt
+                  style="width: 50%"
+                >
+                  <label id="inputLabel" class="bold">Tel.para Recado:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;
+              </div>
+            </div>
+            <!-- Second Flex Div -->
+            <div class="main-second-div" id="second-div-id">
+              <!-- first row -->
+              <div class="flex-div" id="margin-top-1">
+                <md-input-container class="md-block" flex-gt style="width: 60%">
+                  <label id="inputLabel" class="bold">Financeiro:</label>
+                  <input ng-model="user.firstName" id="inputField2" />
+                </md-input-container>
+                &nbsp;&nbsp;
+                <md-input-container class="md-block" flex-gt style="width: 40%">
+                  <label id="inputLabel" class="bold"
+                    >Data de Nascimento:</label
+                  >
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+              </div>
+              <!-- second row -->
+              <div class="flex-div" id="margin-top">
+                <md-input-container class="md-block" flex-gt style="width: 40%">
+                  <label id="inputLabel" class="bold">C.P.F:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;<md-input-container
+                  class="md-block"
+                  flex-gt
+                  style="width: 20%"
+                >
+                  <label id="inputLabel" class="bold">R.G:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;<md-input-container
+                  class="md-block"
+                  flex-gt
+                  style="width: 40%"
+                >
+                  <label id="inputLabel" class="bold">Tel.Residencial:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+              </div>
+              <!-- Third row -->
+              <div class="flex-div" id="margin-top">
+                <md-input-container class="md-block" flex-gt style="width: 50%">
+                  <label id="inputLabel" class="bold">Tel. Celular:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;<md-input-container
+                  class="md-block"
+                  flex-gt
+                  style="width: 50%"
+                >
+                  <label id="inputLabel" class="bold">Tel.Comercial:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+              </div>
+              <!-- Third row -->
+              <div class="flex-div" id="margin-top">
+                <md-input-container class="md-block" flex-gt style="width: 50%">
+                  <label id="inputLabel" class="bold">Profissao:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                &nbsp;&nbsp;<md-input-container
+                  class="md-block"
+                  flex-gt
+                  style="width: 50%"
+                >
+                  <label id="inputLabel" class="bold">Tel.para Recado:</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Third Form Ends -->
     </div>
     <!-- Form ends -->
   </body>
