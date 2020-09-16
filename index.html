@@ -52,45 +52,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Print Model</title>
     <style>
-      *{
-      }
       .logo {
-        /* border: 1px solid red; */
+      /* / border: 1px solid red; / */
       }
       .header {
-        /* border: 1px solid green; */
-        display: flex;
+      /* border: 1px solid green; */
+      display: flex;
       }
       .text-div {
-        width: 80vw;
-        text-align: center;
-        /* border: 1px solid red; */
-
-        padding-top: 50px;
+      width: 80vw;
+      text-align: center;
+      padding-top: 50px;
       }
       .heading-h3 {
-        font-weight: normal;
+      font-weight: normal;
       }
     </style>
   </head>
   <style>
-     
-     #inputField{ height: 40px;
-    border: 1px solid #666666;
-    border-radius: 10px;
-    width: 200px;
+    #inputField {
+      height: 40px;
+      border: 1px solid #666666;
+      border-radius: 5px;
+      width: 200px;
     }
-    #inputLabel{
-        margin-bottom: -7px;
-    margin-left: 15px;
-    background-color: white;
-    width: fit-content;
+    #inputLabel {
+      margin-bottom: -7px;
+      margin-left: 15px;
+      background-color: white;
+      width: fit-content;
     }
-    .md-content.md-default-theme, md-content{
-        background-color: white;
+    .md-content.md-default-theme,
+    md-content {
+      background-color: white;
     }
   </style>
-  <body >
+  <body>
+    <!-- Header div -->
+    <div class="header">
+      <!-- first logo div -->
+      <div>
+        <img src="./img/logo-1.png" alt="" class="logo" />
+      </div>
+      <div class="text-div">
+        <h3 class="heading-h3">COLÉGIO SAGRADO CORAÇÃO DE JESUS</h3>
+        <p>RUA PROFESSOR MORAES,363, FUNCIONÁRIOS-BELO HORIZONTE/MG</p>
+      </div>
+      <div>
+        <img src="./img/logo-2.png" alt="" class="logo" />
+      </div>
+    </div>
+    <!-- Header div ends -->
 
+    <!-- Form Started -->
+    <div>
+      <div
+        ng-controller="DemoCtrl"
+        layout="column"
+        ng-cloak
+        class="md-inline-form"
+      >
+        <md-content>
+          <div>
+            <form name="userForm">
+              <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt>
+                  <label id="inputLabel">First name</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt>
+                  <label id="inputLabel">First name</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt>
+                  <label id="inputLabel">First name</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt>
+                  <label id="inputLabel">First name</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt>
+                  <label id="inputLabel">First name</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt>
+                  <label id="inputLabel">First name</label>
+                  <input ng-model="user.firstName" id="inputField" />
+                </md-input-container>
+              </div>
+
+              <md-input-container class="md-block">
+                <label>Address</label>
+                <input ng-model="user.address" />
+              </md-input-container>
+            </form>
+          </div>
+        </md-content>
+      </div>
+    </div>
+    <!-- Form ends -->
   </body>
 </html>
